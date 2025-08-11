@@ -1,0 +1,392 @@
+/* DESIGN FOR ALL*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+/*emplasis on the images*/
+img:hover{
+    width: 300px;
+    height: 300px;
+    box-shadow: 5px 5px 7px #555;
+}
+a {
+    color: inherit; /* This will make hyperlinks inherit the color of their parent elements */
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(19, 9, 85);
+}
+h3{
+    text-align: center;
+}
+/* DESIGN FOR HOMEPAGE*/
+    /* Making the navigation bar fixed to the top of the homepage */
+table.navigation{
+    position: fixed;
+   
+}
+
+ /*descendant selector selecting all td elements within an element of class name navigation */
+.navigation td {
+    color: rgb(238, 234, 243);
+    font-family: Algerian;
+    }
+/*Style the navigation table after the user has scrolled passed a point*/
+.nav-scroll {
+    background-color: rgb(250, 250, 250); /* Add the background color for scrolling */
+    
+}
+/* override the text color for td elements */
+.nav-scroll.navigation td {
+    color: #333;
+    font-family: Algerian;
+}
+
+ 
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('Blurr.jpg');
+    background-repeat: no-repeat ;
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+}
+/*Setting background images, their size and position and making them transition from one to another*/
+.slides{
+    width: 800px;
+    height: 750px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    animation: slideshow 30s ease-in infinite;
+}
+@keyframes slideshow {
+    0% {
+        background-image: url('Exterior.jpg');
+    }
+    25% {
+        background-image: url('pool.jpg');
+    }
+    50% {
+        background-image: url('Lounge.jpg');
+    }
+    75% {
+        background-image: url('Reception.jpg');
+    }
+    100% {
+        background-image: url('Roof Top Pool.jpg');
+    }
+
+}
+/* designing scrolling text*/
+marquee{
+    font-size: xx-large;
+    font-style: italic;
+    color: purple;
+}
+/*Using class selector to design all amenity headings*/
+.amenity{
+    text-align: center;
+    color: darkblue;
+    font-size: 40px;
+    font-family: Algerian, Arial, Helvetica, sans-serif;
+}
+/*Organizing the amenities and showing their description*/
+table{
+    border-spacing: 140px 3px; /* the first is horizontal spacing and the next is vertical spacing*/
+    
+}
+.description td{
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* DESIGN FOR RESAURANT PAGE*/
+
+#restaurant-header {
+    text-align: center;
+    color: antiquewhite;
+    background-image: url(restaurantimg.jpg);
+    height: 400px;
+    }
+header h1 {
+    font-size: 60px;
+    font-family: Algerian, Arial, Helvetica, sans-serif;
+}
+header p {
+    font-style: italic;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aquamarine;
+}
+h1{
+    text-align: center;
+    font-family: Algerian, Arial, Helvetica, sans-serif;
+    font-size: 45px;
+}
+div h2{
+    text-align: center;
+    font-family: Algerian;
+    font-size: 25px;
+}
+td p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+/* DESIGN FOR RESERVATION PAGE*/
+#reservation-header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    background-image: url(Exterior.jpg);
+}
+form {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    }
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #555;
+}
+/*confirmation details*/
+#reservation-details{
+    text-align: center;
+}
+#return{
+    color: aliceblue;
+    background-color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:auto; /*centers the button horizontally*/
+    display: block;
+}
+/*DESIGN FOR SPORTS PAGE*/
+
+.caption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    font-size: 50px;
+    font-family: Algerian, Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+   vertical-align: middle;
+    
+}
+div p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.info p:last-child{
+text-align: center;
+color: red;
+font-size: 30px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Ensures that cards wrap to the next line if there isn't enough space */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.card {
+    width: 800px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow:hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    }
+    .card img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    .centered-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* Ensures that cards wrap to the next line if there isn't enough space */
+        text-align: center;
+    }
+    .sport {
+        justify-content: center;
+        align-items: center;
+        
+    }
+/*DESIGN FOR RELAXATION*/
+#card1, #card2, #card3{
+    width: 300px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow:hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+#card1 img,#card2 img,#card3 img{
+    width: 100%;
+    height: 200px;
+   
+}
+.relax {
+    background-image: url(gardens.jpg );
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+/*DESIGN FOR RELAXATION AND SPORTS*/
+.card-content {
+    padding: 20px;
+}
+.card-content h2 {
+    margin-top: 0;
+}
+
+/*DESIGN FOR ROOMS*/
+.rooms {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: peru;
+}
+
+.room {
+    border: 1px solid wheat;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.room img {
+    width: 80%;
+    height: 500px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding:20px ;
+}
+.room h1 {
+    margin-top: 0;
+    text-align: center;
+    color: rgb(57, 19, 224);
+    font-size: 40px;
+    font-family:Algerian, Arial, Helvetica, sans-serif;
+}
+
+.book-now {
+    background-color: greenyellow;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.book-now:hover {
+    background-color: greenyellow;
+}
+h3{
+    color:rgb(15, 124, 57);
+    font-family: Algerian, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+header video{
+    object-fit: cover;
+}
+/*DESIGN FOR ROOM PAGE*/
+#room-header {
+    text-align: center;
+    color: antiquewhite;
+    background-image: url(roomHeader.jpg);
+    height: 400px;
+    }
+/*DESIGN FOR CONTACT*/
+.outer {
+    float: left;
+    padding: 50px ;
+    width: 25%;
+    text-align: center;
+}
+/* Style for the entire contact section */
+.contact-form input{
+    width: 90%;
+}
+.contact-form textarea{
+    width: 90%; 
+}
+.contact  {
+    background-color: black;
+    color:white;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: relative;}
+
+/* Style for the headings inside the contact section */
+.contact h2 {
+    font-size: 24px; /* Sets the font size */
+}
+
+/* Style for the headings of each contact detail */
+.contact h4 {
+    font-size: 20px; /* Sets the font size */
+    margin-bottom: 5px; /* Adds margin for better spacing */
+}
+
+/* Style for the paragraphs inside the contact section */
+.contact .outer p {
+    margin: 5px 0; /* Adds margin for better spacing */
+    color: aliceblue;
+    font-size: 15px;
+}
+/* Style for the submit button */
+.contact .outer input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+        }
+.map img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+        }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <title>Reservation</title>   
+</head>
+<body>
+   
+<header id="reservation-header">
+    <h1>Make a Reservation</h1>
+</header>
+
+<!-- Form for the user to input their details -->
+<form id="reservation-form" method="get" autocomplete="on">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+    
+    <label for="date-in">Check In Date</label>
+    <input type="date" id="date-in" name="date" required>
+
+    <label for="date-out">Check Out Date</label>
+    <input type="date" id="date-out" name="date" required><br>
+
+    <label for="room-type">Room Type:</label>
+    <select id="room-type" name="room-type" required>
+        <option value="single">Single Room</option>
+        <option value="double">Double Room</option>
+        <option value="suite">Suite</option>
+    </select>
+    <input type="submit" value="Book" onclick="confirm('Are you sure you want to make a reservation?')">
+</form>
+<h3>For More Information <a href="contact.html">CONTACT US</a></h3>
+<script type="text/javascript" src="data.js"></script>
+</body>
+</html>
